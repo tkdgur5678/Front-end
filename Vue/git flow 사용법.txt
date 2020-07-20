@@ -1,0 +1,18 @@
+# git flow 사용 시작
+git flow init
+- git clone 한 후에 폴더 안에 하면 되는듯
+
+# feature/브랜치명 으로 브랜치 생성
+git flow feature start 브랜치명
+- 각 기능을 feature 브랜치를 생성해서 구현
+
+# 브랜치를 develop에 merge하고
+# 해당 branch 삭제 후 develop으로 돌아감
+git flow feature finish 브랜치명
+- 현재 기능 구현을 완료했기에 develop이랑 merge 후에 git push origin develop 명령으로 원격저장소에 올릴 수 있음
+
+# 작업내용을 remote로 올리기
+git flow feature publish 브랜치명
+- 여러명이서 같은 기능을 구현할때 remote로 올림으로써 서로 공유가능
+
+작은 커밋과 잦은 merge Request가 conflict를 줄일 수 있다.
